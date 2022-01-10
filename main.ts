@@ -9,7 +9,19 @@ input.onGesture(Gesture.LogoDown, function () {
     }
 })
 function OdesilaciMod () {
-	
+    if (Stav == 0) {
+        Stav = 2
+    } else if (Stav == 1) {
+    	
+    } else if (Stav == 2) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    }
 }
 input.onButtonPressed(Button.A, function () {
     PrijmaciMod()
@@ -33,8 +45,10 @@ input.onButtonPressed(Button.B, function () {
 function Zpet () {
     if (Stav == 0) {
         Stav = 0
+        Sprite.delete()
     } else if (Stav == 1) {
         Stav = 0
+        Sprite.delete()
     } else if (Stav == 2) {
         Stav = 0
     }
