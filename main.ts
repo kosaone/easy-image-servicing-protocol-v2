@@ -79,6 +79,7 @@ basic.forever(function () {
             led.plot(X_Cache, Y_Cache)
             X_Cache = 50
             Y_Cache = 50
+            control.waitMicros(290)
         }
     }
 })
