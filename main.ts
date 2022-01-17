@@ -46,6 +46,7 @@ function Zpet () {
         Sprite.delete()
     } else if (Stav == 1) {
         Sprite.move(1)
+        Sprite.delete()
     } else if (Stav == 2) {
         Stav = 0
     }
