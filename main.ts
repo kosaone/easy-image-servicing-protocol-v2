@@ -74,14 +74,11 @@ let Sprite: game.LedSprite = null
 let Stav = 0
 Stav = 0
 basic.forever(function () {
-    if ((X_Cache && Y_Cache) != 50) {
-        if ((X_Cache && Y_Cache) != (SpriteCurrentX && SpriteCurrentY)) {
+    if (Stav == 1) {
+        if ((X_Cache && Y_Cache) != (SpriteCurrentX && SpriteCurrentY) && (X_Cache && Y_Cache) != 50) {
             led.plot(X_Cache, Y_Cache)
             X_Cache = 50
             Y_Cache = 50
         }
     }
-})
-basic.forever(function () {
-	
 })
